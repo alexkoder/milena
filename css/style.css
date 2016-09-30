@@ -1,0 +1,156 @@
+			/* GENERAL BEGIN */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+@font-face {
+	font-family: OpenSans-Light;
+	src: url('../fonts/OpenSans-Light.ttf');
+}
+body {
+	font: 13px/1.38 OpenSans-Light, Tahoma, sans-serif;
+}
+
+			/* GENERAL END */
+
+			/* HEADER BEGIN */
+
+.header {
+	background: url('../img/bg-header.png') repeat-x 0 bottom, 
+		url('../img/bg-header.png') repeat-x 0 top #3e4c54;
+}
+.inner-header {
+	background: url('../img/bg-inner.png') no-repeat center bottom;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+header {
+	height: 82px;
+	font-size: 13px;
+	line-height: 1.2;
+}
+header .hdr-list li {
+	float: left;
+}
+.description {
+	font-size: 18px;
+	color: #ccc;
+	margin: 21px 57px 0 21px;
+	letter-spacing: 0.02em;
+}
+.basket {
+	display: block;
+	padding: 23px 0 12px 55px;
+	background: url('../img/basket.png') no-repeat 0 55%;
+	color: #fff;
+	line-height: 18px;
+}
+.fs18 {
+	font-size: 18px;
+}
+
+.info-block {
+	margin-right: 21px;
+	text-align: right;
+}
+.net-icons li {
+	float: right;
+	margin: 10px 0 6px 5px;
+}
+.net-icons li a {
+	width: 18px;
+	height: 18px;
+	display: block;
+	background: url('../img/sprite.png') no-repeat -46px 0;
+}
+.net-icons li a.fb {
+	background-position: -23px 0;
+}
+.net-icons li a.vk {
+	background-position: 0 0;
+}
+.tel {
+	font-size: 16px;
+	color: #fff;
+	display: block;
+	clear: right;
+	letter-spacing: 0.03em;
+
+}
+.registration, .registration a {
+	font: 12px Tahoma, sans-serif;
+	color: #90989c;
+	letter-spacing: 0.03em;
+}
+.registration a {
+	text-decoration: underline;
+}
+
+			/* HEADER END */
+
+			/* MAIN MENU BEGIN */
+.nav { 
+	background: #1c1c1c;
+}
+.nav-inner {
+	background: url(../img/bg-inner-nav.png) no-repeat 50% 0;
+}
+nav>ul>li {
+	float: left;
+	position: relative;
+}
+nav>ul>li>a {
+	display: inline-block;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	padding: 16px 16px 16px 17px;
+	transition: color 0.5s;
+}
+nav>ul>li>a:hover {
+	color: #fff;
+	background-image: linear-gradient(to top, #353535, #292929);
+}
+nav>ul>li:after {
+	content: '';
+	display: inline;
+	border-right: 1px solid #303030;
+}
+nav>ul>li:last-child:after {
+	border: none;
+}
+li>ul {
+	display: none;
+	position: absolute;
+}
+nav>ul>li:hover ul {
+	display: block;
+	top: 48px;
+}
+li>ul>li {
+	width: 125px;
+	border-bottom: 1px solid #fff;
+	background: #353535;
+	padding: 5px;
+}
+li>ul>li>a {
+	color: #fff;
+}
+			/* MAIN MENU END */
+
+			/*CLEARFIX*/
+
+header:after, nav:after {
+	content: '';
+	display: table;
+	clear: both;
+}
