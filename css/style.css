@@ -3,6 +3,8 @@
 * {
 	margin: 0;
 	padding: 0;
+	background: none;
+	border: none;
 }
 ul {
 	list-style: none;
@@ -35,6 +37,7 @@ body {
 }
 header {
 	height: 82px;
+	margin-left: 12px;
 	font-size: 13px;
 	line-height: 1.2;
 }
@@ -59,7 +62,7 @@ header .hdr-list li {
 }
 
 .info-block {
-	margin-right: 21px;
+	margin-right: 9px;
 	text-align: right;
 }
 .net-icons li {
@@ -104,6 +107,9 @@ header .hdr-list li {
 .nav-inner {
 	background: url(../img/bg-inner-nav.png) no-repeat 50% 0;
 }
+nav {
+	margin-left: 12px;
+}
 nav>ul>li {
 	float: left;
 	position: relative;
@@ -147,9 +153,124 @@ li>ul>li>a {
 }
 			/* MAIN MENU END */
 
+			/* SIDEBAR BEGIN */
+
+.main {
+	border-top: 1px solid #fff;
+	background-color: #fff;
+	background-image: linear-gradient(to bottom, #e3e3e2 0px, #fff 70px);
+	padding: 26px 0 0 0;
+}
+.sidebar {
+	float: left;
+	width: 249px;
+	height: 500px;
+}
+.products {
+	padding: 5px 0 0 11px;
+	min-height: 150px;
+}
+.products li a {
+	font-size: 18px;
+	line-heigh: 24px;
+	color: #6b8492;
+	text-transform: uppercase;
+}
+.products li a.selected-product {
+	text-decoration: underline;
+}
+.sb-block {
+	color: #333;
+	margin-bottom: 21px;
+}
+.sb-block h3 {
+	padding: 0 0 0 9px;
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: normal;
+	background-color: #899da8;
+	text-transform: uppercase;
+}
+.parameters ul {
+	border-top: 1px solid #fff;
+	background: #f7f7f7;
+	padding: 3px 0 0 5px;
+}
+.parameters ul li a {
+	line-height: 1.2;
+	color: #f36720;
+	padding: 0 0 0 10px;
+	background: url('../img/crest.png') no-repeat 0 8px;
+}
+.parameters ul li a:hover {
+	background-position: 0 -8px;
+}
+.parameters input[type='reset'] {
+	color: #333;
+	text-decoration: underline;
+	cursor: pointer;
+	outline: none;
+	margin: 14px 0 11px 4px;
+	letter-spacing: 0.022em;
+}
+.sb-text ul {
+	padding: 3px 0 0 9px;
+}
+.sb-text li a {
+	color: #333;
+	line-height: 18px;
+}
+.checkboxes div {
+	padding: 3px 0 0 8px;
+}
+.checkboxes input[type='checkbox'] {
+	display: none;
+}
+.checkboxes label {
+	display: inline-block;
+	width: 65px;
+	line-height: 18px;
+	padding: 0 0 0 16px;
+	background: url('../img/checkbox.png') no-repeat -3px 1px;
+}
+input[type='checkbox']:checked + label {
+	background-position: -3px -17px;
+}
+.checkboxes.three-cols label {
+	width: 35px;
+	margin-right: 30px;
+}
+.checkboxes.three-cols label:nth-child(3n) {
+	margin-right: 0px;
+}
+.checkboxes.material label:nth-of-type(2) {
+	width: 120px;
+}
+.adress {
+	margin: 58px 0 0 0;
+	padding: 5px 0 1px 9px;
+	color: #666;
+	line-height: 1.2;
+	background: #f7f7f7;
+}
+.adress p {
+	margin: 0 0 10px 0;
+}
+.adress a {
+	color: #666;
+	text-decoration: underline;
+	padding-left: 17px;
+	background: url(../img/adress-icon.png) no-repeat 3px 3px;
+}
+
+			/* SIDEBAR END */
+
 			/*CLEARFIX*/
 
-header:after, nav:after {
+header:after, 
+nav:after,
+.main:after {
 	content: '';
 	display: table;
 	clear: both;
