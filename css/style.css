@@ -89,6 +89,10 @@ header .hdr-list li {
 	letter-spacing: 0.03em;
 
 }
+.registration {
+	display: block;
+	position: relative;
+}
 .registration, .registration a {
 	font: 12px Tahoma, sans-serif;
 	color: #90989c;
@@ -96,6 +100,80 @@ header .hdr-list li {
 }
 .registration a {
 	text-decoration: underline;
+}
+.popup {
+	display: none;
+	font: 13px OpenSans-Light, Tahoma, sans-serif;
+	letter-spacing: 0em;
+	text-align: left;
+	z-index: 5;
+	position: absolute;
+	top: 25px;
+	right: -9px;
+	padding: 14px 30px 30px 30px;
+	width: 310px;
+	/*height: 210px;*/
+	background: #fff;
+	border: 3px solid #6b8492;
+}
+.popup h3 {
+	font-size: 18px;
+	color: #fe6d23;
+	letter-spacing: -0.01em;
+	text-transform: uppercase;
+	font-weight: normal;
+	margin-bottom: 25px;
+}
+.popup input[type=text], 
+.popup input[type=email], 
+.popup input[type=password] {
+	display: block;
+	font-size: 13px;
+	line-height: 17px;
+	padding: 5px 8px 7px 8px;
+	margin-bottom: 9px;
+	width: 202px;
+	border: 1px solid #ccc;
+	outline: none;
+}
+.popup input[type=password] {
+	margin-bottom: 20px;
+}
+.popup input:focus {
+	border: 1px solid #f36720;
+}
+.popup input[type=submit] {
+	float: right;
+	font: 13px/1.2 Tahoma, sans-serif;
+	color: #fff;
+	padding: 9px 13px 7px 13px;
+	min-width: 116px;
+	text-align: center;
+	background: #fe6d23;
+	cursor: pointer;
+}
+.popup input[type=checkbox] {
+	vertical-align: top;
+}
+.popup a.lisence-link {
+	font: 13px/1.2 OpenSans-Light, Tahoma, sans-serif;
+	color: #f36720;
+	margin: -4px 0 0 3px;
+	text-decoration: underline;
+	display: inline-block;
+	width: 120px;
+}
+.popup .close-btn {
+	position: absolute;
+	top: 20px;
+	right: 22px;
+	width: 15px;
+	height: 15px;
+	cursor: pointer;
+	background: url(../img/close-btn.png) no-repeat 0 0;
+}
+.popup .close-btn:hover {
+	background-position: -15px 0;
 }
 
 			/* HEADER END */
